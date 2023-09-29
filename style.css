@@ -1,0 +1,71 @@
+div{
+  width: 70%;
+  height: 50vh;
+  background-color: #d3d3d3;
+  margin: 5% auto;
+  position: relative;
+}
+div button{
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 40px;
+  cursor: pointer;
+  overflow: hidden;
+}
+div button::before{
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: coral;
+  transition: 1s;
+  
+}
+div button:hover::before{
+  width: 200px;
+  height: 200px;
+  background-color: #ff7f50;
+}
+span{
+  position: relative;
+  z-index: 1;
+}
+
+/*line effect*/
+
+div p{
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px 40px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+div p::before{
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: coral;
+  transition: 1s;
+  
+}
+div p:hover::before{
+  width: 200px;
+  height: 2px;
+  background-color: coral;
+}
